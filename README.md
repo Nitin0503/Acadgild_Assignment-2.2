@@ -12,36 +12,4 @@ Answer: The sample JSON files text1, text2, & test3 are present in the folder"js
 "C:\Users\Celebrity\Desktop\Data Analytics File\Acadgild". 
 
 Jsonlite & dyplr packages are installed & then below shown commands are executed to convert them into dataset.
-> y<-read_json("C:\\Users\\Celebrity\\Desktop\\Data Analytics File\\Acadgild\\text1.JSON")
-> x<-read_json("C:\\Users\\Celebrity\\Desktop\\Data Analytics File\\Acadgild\\text2.JSON")
-> z<-read_json("C:\\Users\\Celebrity\\Desktop\\Data Analytics File\\Acadgild\\text3.JSON")
-> a<-as.data.frame(do.call("rbind",y))
-> b<-as.data.frame(do.call("rbind",x))
-> c<-as.data.frame(do.call("rbind",z))
-> a
-  name species                       foods
-1  abx     cat tuna, catnip, ham, zucchini
-2  Bcd     dog        bones, carrots, tuna
-3  egg     cat           mice, nn, cookies
-> b
-   name species                       foods
-1   Meo     cat tuna, catnip, ham, zucchini
-2 Barky     dog        bones, carrots, tuna
-3 Purws     cat                    a, nn, s
-> c
-      name species                       foods
-1   Meowsy     cat tuna, catnip, ham, zucchini
-2    Barky     dog        bones, carrots, tuna
-3 Purrpaws     cat           mice, nn, cookies
-p=rbind(a,b,c)
-> p
-      name species                       foods
-1      abx     cat tuna, catnip, ham, zucchini
-2      Bcd     dog        bones, carrots, tuna
-3      egg     cat           mice, nn, cookies
-4      Meo     cat tuna, catnip, ham, zucchini
-5    Barky     dog        bones, carrots, tuna
-6    Purws     cat                    a, nn, s
-7   Meowsy     cat tuna, catnip, ham, zucchini
-8    Barky     dog        bones, carrots, tuna
-9 Purrpaws     cat           mice, nn, cookies
+> 
